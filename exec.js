@@ -25,12 +25,94 @@
 
 //2.
 
-let idade = 17;
+// let idade = 17;
 
-if(idade < 18){
-    console.log("Voce é menor de idade: ", idade);
-}
+// if(idade < 18){
+//     console.log("Voce é menor de idade: ", idade);
+// }
 
-else {
-    console.log("Voce é maior de idade", idade);
+// else {
+//     console.log("Voce é maior de idade: ", idade);
+// }
+
+//3. 
+
+// let numero = 1;
+
+// if(numero & 2){
+//     console.log(numero ,"este numero é par");
+// }
+// else{
+//    console.log(numero, "este numero é impar");
+// }
+
+//4.
+
+// let numero1 = 2;
+// let nuemro2 = 2;
+
+// if( numero1 < nuemro2){
+//     console.log("o numeros são: ", numero1, " E ",nuemro2, "\nO numero maior é: ", nuemro2);
+// }
+// else if(nuemro2 < numero1){
+//      console.log("o numeros são: ", numero1, " E ",nuemro2, "\nO numero maior é: ", numero1);
+// }
+// else{
+//     console.log("os dois sao iguais ou nao existem");
+// }
+
+//5.
+// let nome = "marcia";
+// let login = "oi";
+// let senha = 123;
+
+// if(login == "oi" && senha == 123){
+//     console.log("usuario entrou bem vindo(a)!! ", nome);
+// }
+// else{
+//     console.log("boa tentativa mas esta errado volte e tente novamente");
+// }
+
+// Exercícios com for
+
+// 6. Crie um programa que use um for para mostrar os números de 1 até 10 no console.✔
+// 7. Crie um programa que use um for para mostrar os números de 10 até 1 (contagem regressiva).✔
+// 8. Crie um programa que use um for para mostrar todos os números pares de 0 até 20.✔
+// 9. Crie um programa que use um for para mostrar a tabuada de um número definido em uma variável.✔
+// 10. Crie um programa que use um for para calcular e mostrar a soma de todos os números de 1 até 100.✔
+
+// 6.
+// for( let i = 1; i < 11; i++){
+
+//     console.log("numero: ", i);
+// }
+
+//7.
+// for( let i = 10; i > 0; i--){
+//     console.log("contagem regressiva: ", i);
+// }
+
+//8.
+// for (let i = 0; i < 21; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i, "este numero é par");
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+//9.
+
+// let num =  5;
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(`${num} x ${i} = ${num * i}`);
+// }
+
+//10.
+let soma = 0
+for(i = 1; i <=100; i++){
+   let resultado = soma+i
+    console.log(i ,"a soma dos nuemeros são",  (resultado));
 }
