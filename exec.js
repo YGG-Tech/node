@@ -111,8 +111,23 @@
 // }
 
 //10.
-let soma = 0
-for(i = 1; i <=100; i++){
-   let resultado = soma+i
-    console.log(i ,"a soma dos nuemeros são",  (resultado));
-}
+// let soma = 0
+// for(i = 1; i <=100; i++){
+//    soma = soma + i;
+//    let resultado = soma+i
+//     console.log(i ,"a soma dos nuemeros são",  (resultado));
+// }
+// Exercícios com while
+
+// 11. Crie um programa que use while para mostrar os números de 1 até 10.✔
+// 12. Crie um programa que use while para mostrar uma contagem regressiva de 5 até 1.
+// 13. Crie um programa que use while para somar os números de 1 até 10 e mostrar o resultado final.
+// 14. Crie um programa que use while para mostrar todos os múltiplos de 3 até 30.
+// 15. Crie um programa que comece com o número 1 e vá dobrando o valor enquanto ele for menor ou igual a 100, mostrando cada resultado.
+
+//11.
+// let i = 1;
+// while(i <= 10){
+//  console.log(i);
+//  i++;
+// }
