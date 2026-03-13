@@ -111,18 +111,18 @@
 // }
 
 //10.
-// let soma = 0
+// let soma = 0;
 // for(i = 1; i <=100; i++){
 //    soma = soma + i;
-//    let resultado = soma+i
+//    let resultado = soma+i;
 //     console.log(i ,"a soma dos nuemeros são",  (resultado));
 // }
 // Exercícios com while
 
 // 11. Crie um programa que use while para mostrar os números de 1 até 10.✔
-// 12. Crie um programa que use while para mostrar uma contagem regressiva de 5 até 1.
-// 13. Crie um programa que use while para somar os números de 1 até 10 e mostrar o resultado final.
-// 14. Crie um programa que use while para mostrar todos os múltiplos de 3 até 30.
+// 12. Crie um programa que use while para mostrar uma contagem regressiva de 5 até 1.✔
+// 13. Crie um programa que use while para somar os números de 1 até 10 e mostrar o resultado final.✔
+// 14. Crie um programa que use while para mostrar todos os múltiplos de 3 até 30.✔
 // 15. Crie um programa que comece com o número 1 e vá dobrando o valor enquanto ele for menor ou igual a 100, mostrando cada resultado.
 
 //11.
@@ -131,3 +131,152 @@
 //  console.log(i);
 //  i++;
 // }
+
+//12.
+// let i = 5;
+// while(i > 0){
+//     console.log(i);
+//     i--;
+// }
+
+//13.
+// let i = 1;
+// let soma = 0;
+// while(i <11){
+//     soma = soma + i;
+//     console.log(i,"Estes numeros estao somados", soma );
+//     i++;
+
+// }
+
+//14.
+// let i = 0;
+// while( i <=30){
+//     if(i % 3 == 0){
+//         console.log(i,"estes sao os multiplos de 3: ", i);
+//     }
+//     else{
+//         console.log(i,"Estes numeros NÃO sao multiplos de 3: ", i)
+//     }
+//     i++
+// }
+
+// 15.1
+// let i = 1;
+// let dobrado = 0;
+// while(i < 101){
+//     if(i < 101){
+//         dobrado = i + 2;
+//         console.log(i,"esta sendo dobrado", dobrado);
+//     }
+//     i++;
+// }
+// 15.2
+
+// let i = 1;
+// let dobrado = 2
+// while(i <101){
+//     if(i < 101){
+//         dobrado = dobrado + i;
+//         console.log(i,"esta sendo dobrado", dobrado);
+//     }
+//     i++;
+// }
+
+// 16. Crie um programa que use do...while para **mostrar os números de 1 até 5.
+    // i= 0;
+    // do{
+    //     i +=1;
+    //     console.log(i,"Este numer esta sendo contado");
+        
+    // }while(i < 5);
+// 17. Crie um programa que use do...while para **mostrar uma contagem regressiva de 10 até 0.
+    // i = 11;
+    // do{
+    //     i -=1;
+    //     console.log(i,"este numero esta sendo decrementado");
+    // }while(i > 0);
+// 18. Crie um programa que use do...while para **mostrar a tabuada do número 3.
+        // let i = 0;
+        // let num = 3;
+        // do{
+        //     i += 1;
+        //     console.log(i,"X",num,"=", (num*i));
+
+        // }while(i <= 9);
+
+// 19. Crie um programa que use do...while para **somar os números de 1 até 5 e mostrar o resultado final.
+    // let i = 0;
+    // let soma = 0;
+    // do{
+
+    //     i += 1;
+    //     soma = soma + i;
+    //     console.log(i ,"somado com", soma);
+
+    // }while(i < 5);
+// 20. Crie um programa que use do...while para **mostrar todos os números ímpares até 15.
+    // let i = 0;
+    // do{
+    //     i+=1;
+    //     if(i %2 !== 0){
+    //         console.log(i,"este numero é impar");
+    //     }
+    //     else{
+    //         console.log(i,"este numero é par")
+    //     }
+    // }while(i < 15); 
+
+// 1. Crie um programa que inverta uma string. Exemplo: "javascript"
+//Anotações: split converte a string em um array o reverse inverte o array e o join volta eles como uma string
+            // let teste = "javascript";
+            // let strinvertida = teste.split('').reverse().join('');
+            // console.log(strinvertida); 
+// 2. Crie um programa que conte quantas vogais existem em uma palavra. Exemplo: "programacao"
+//anotação .length conta todos os caracteres ja o match acha o caractere expecifico
+    // let palavra ="programacao";
+    // const contagemA = (palavra.match(/a/gi) || []).length;
+    // const contagemE = (palavra.match(/e/gi) || []).length;
+    // const contagemI = (palavra.match(/i/gi) || []).length;
+    // const contagemO = (palavra.match(/o/gi) || []).length;
+    // const contagemU = (palavra.match(/u/gi) || []).length;
+
+    // console.log("Aqui esta a contagem de vogais: ",contagemA,"<- A ",contagemE,"<- E ",contagemI,"<- I ",contagemO,"<- O ",contagemU,"<-U");
+  
+
+// 3. Crie um programa que calcule o fatorial de um número. Exemplo: 5! = 5 × 4 × 3 × 2 × 1 
+
+    // let multiplic = 1;
+    // const readlineSync = require('readline-sync');
+    // let i =readlineSync.question("Qual o numero da fatorial: ")
+    
+    // for(i ; i > 0; i--){
+    //  multiplic = multiplic * i;
+    //     console.log("Fatorial do numero: ", i,"!" , "=", multiplic);
+    // }
+// 4. Crie um programa que gere os primeiros N números da sequência de Fibonacci. Exemplo: 10 números 
+// anotações: .slice  retorna a copia de uma sessão no array
+// function fibonacci(n){
+// let sequencia = [0, 1];
+//   if(n < 2) return sequencia.slice(0, n);
+//   for(let i = 2; i < n; i++){
+//     let proximo = (sequencia[i - 1] + sequencia[i - 2]);
+//     sequencia.push(proximo)
+//   }
+//   return sequencia.join(' ');
+// }
+// console.log(fibonacci(10));
+// 5. Crie um programa que verifique se uma palavra é um palíndromo (igual de trás para frente). Exemplo: "arara" 
+
+
+// 6. Crie um programa que conte quantas vezes cada letra aparece em uma palavra. Exemplo: "banana" 
+  
+    
+    
+// 7. Crie um programa que verifique se um número é um número de Armstrong. Exemplo: 153
+    const readlineSync = require('readline-sync');
+    let num = readlineSync.question("Qual o numero voce quer testar:  ");
+
+
+// 8. Crie um programa que verifique se duas palavras são anagramas. Exemplo: "amor" "roma"
+
