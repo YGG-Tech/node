@@ -105,37 +105,38 @@
 
 // console.log(frutas)
 
-// let numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,134,15,16,17,18,19,20,543,21,22,23,25,24,23,29,37,67,53,67,30,27,2,3,23,4,5,4,40,41,42,43,44,45,46,47,48,49,50];
+// let numeros = [  1 ,2 ,3 ,4 ,5,6,7,8,9,10,11,12,13,14,134,15,16,17,18,19,20,543,21,22,23,25,24,23,29,37,67,53,67,30,27,2,3,23,4,5,4,40,41,42,43,44,45,46,47,48,49,50 ];
 
-//     console.log(numeros);
+// //     console.log(numeros);
 
-let estados = [
-  "Acre",
-  "Alagoas",
-  "Amapá",
-  "Amazonas",
-  "Bahia",
-  "Ceará",
-  "Distrito Federal",
-  "Espirito Santo",
-  "Goiás",
-  "Maranhão",
-  "Mato Grosso do Sul",
-  "Mato Grosso",
-  "Minas Gerais",
-  "Pará",
-  "Paraíba",
-  "Paraná",
-  "Pernambuco",
-  "Piauí",
-  "Rio de Janeiro",
-  "Rio Grande do Norte",
-  "Rio Grande do Sul",
-  "Rondônia",
-  "Roraima",
-  "Santa Catarina",
-  "São Paulo",
-  "Sergipe",
-  "Tocantins",
-];
- console.log(estados);
+// let estados = [
+//   "Acre",
+//   "Alagoas",
+//   "Amapá",
+//   "Amazonas",
+//   "Bahia",
+//   "Ceará",
+//   "Distrito Federal",
+//   "Espirito Santo",
+//   "Goiás",
+//   "Maranhão",
+//   "Mato Grosso do Sul",
+//   "Mato Grosso",
+//   "Minas Gerais",
+//   "Pará",
+//   "Paraíba",
+//   "Paraná",
+//   "Pernambuco",
+//   "Piauí",
+//   "Rio de Janeiro",
+//   "Rio Grande do Norte",
+//   "Rio Grande do Sul",
+//   "Rondônia",
+//   "Roraima",
+//   "Santa Catarina",
+//   "São Paulo",
+
+//   "Sergipe",
+//   " Tocantins ", 2 
+// ];
+//  console.log(estados  +  numeros);
