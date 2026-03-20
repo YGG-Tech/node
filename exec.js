@@ -268,40 +268,65 @@
 // console.log(fibonacci(10));
 
 // 5. Crie um programa que verifique se uma palavra é um palíndromo (igual de trás para frente). Exemplo: "arara" 
-
+    // function palindromo(palavra){
+    //     let palavraInit = palavra.toLowerCase();
+    //     let palavrainvert = palavraInit.split('').reverse().join('');
+    //     if(palavraInit === palavrainvert){
+    //         console.log("esta paalvra é um palindromo ", palavraInit, " é igual a ", palavrainvert);
+    //     }
+    //     else{
+    //         console.log("Não é um palindromo pois ", palavraInit, " nao é igual a ", palavrainvert);
+    //     } 
+    // }
+    // palindromo("Arara");
+    // palindromo("Ana");
+    // palindromo("Radar");
+    // palindromo("Paralelepipedo");
 
 // 6. Crie um programa que conte quantas vezes cada letra aparece em uma palavra. Exemplo: "banana" 
-    // const palavra = "banana";
-    // const testestr = palavra.split('');
-    // const letra = test
-    
-    // for(let i = 0; i < testestr.length; i++){
-    //     if( palavra[i] == testestr){
-    
-         
-    // }}
-    // console.log(testestr);
+        // let palavra ="programacao";
+    // const contagemA = (palavra.match(/a/gi) || []).length;
+    // const contagemE = (palavra.match(/e/gi) || []).length;
+    // const contagemI = (palavra.match(/i/gi) || []).length;
+    // const contagemO = (palavra.match(/o/gi) || []).length;
+    // const contagemU = (palavra.match(/u/gi) || []).length;
+
+    // console.log("Aqui esta a contagem de vogais: ",contagemA,"<- A ",contagemE,"<- E ",contagemI,"<- I ",contagemO,"<- O ",contagemU,"<-U");
+  
     
     
 // 7. Crie um programa que verifique se um número é um número de Armstrong. Exemplo: 153
 // mesmo em js ou qualquer outra linguagem é muito importante usar as functions para separar e organizar.
-function Armstrong(numero){
-    let num = numero.toString().split('');
-    let tamanho = num.length;
-    const soma = num.reduce((acumulador, valorAtual) => acumulador + Math.pow(parseInt(valorAtual), tamanho), 0); 
-    if (soma === numero) {
-        console.log(
-            numero + " É um numero de Armstrong");
-    }
-    else {
-        console.log
-            (numero + " Não é um numero de Armstrong");
-    }
+// function Armstrong(numero){
+//     let num = numero.toString().split('');
+//     let tamanho = num.length;
+//     const soma = num.reduce((acumulador, valorAtual) => acumulador + Math.pow(parseInt(valorAtual), tamanho), 0); 
+//     if (soma === numero) {
+//         console.log(
+//             numero + " É um numero de Armstrong");
+//     }
+//     else {
+//         console.log
+//             (numero + " Não é um numero de Armstrong");
+//     }
 
-};
- Armstrong(153);
- Armstrong(9);
- Armstrong(10);
- Armstrong(156);
+// };
+//  Armstrong(153);
+//  Armstrong(9);
+//  Armstrong(10);
+//  Armstrong(156);
 // 8. Crie um programa que verifique se duas palavras são anagramas. Exemplo: "amor" "roma"
+function eAnagrama(str1, str2){
+
+  const normalizar = (str) => str.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
+  if( normalizar(str1) === normalizar(str2)){
+    console.log("é um anagrama pois ", str1 , "é outra palavra", str2 )
+  }
+  else{
+        console.log("Não é um anagrama")
+  }
+};
+
+console.log(eAnagrama('amor', 'roma'));
+console.log(eAnagrama('carro', 'barco')); 
 
